@@ -49,16 +49,27 @@ caards.innerHTML += Object.values(projects).map(item => `
         <div class="card-body d-flex flex-column">
           <h1 class="card-title">${item.title}</h1>
           <p class="card-text">Description : ${item.description}</p>
-          <button class="btn btn-primary mt-auto" onclick="window.open('${item.link}', '_blank' )">Open Project</button>
+         <button class="btn custom-btn" onclick="window.open('${item.link}', '_blank')">Open Project</button>
         </div>
       </div>
     </div>
   `).join('');
   
-function openProject() {
-    var src = "https://ayanhabib67.github.io/Add-to-Card/";
-    window.open(src, "_blank");
-  }
+
+
+
+window.onload = function() {
+  swal({
+    title: "Welcome to My Portfolio 👋",
+    text: "I'm Ayan Habib — a passionate Front-End Developer. Explore and enjoy the journey!",
+    icon: "https://avatars.githubusercontent.com/u/192097471?v=4",
+    button: {
+      text: "Let's Explore 🚀",
+      className: "custom-btn"
+    },
+    closeOnClickOutside: false
+  });
+};
 
 
   
