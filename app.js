@@ -48,12 +48,19 @@ caards.innerHTML += Object.values(projects).map(item => `
         
         <div class="card-body d-flex flex-column">
           <h1 class="card-title">${item.title}</h1>
-          <p class="card-text">${item.description}</p>
+          <p class="card-text">Description : ${item.description}</p>
           <button class="btn btn-primary mt-auto" onclick="window.open('${item.link}', '_blank' )">Open Project</button>
         </div>
       </div>
     </div>
   `).join('');
+  
+function openProject() {
+    var src = "https://ayanhabib67.github.io/Add-to-Card/";
+    window.open(src, "_blank");
+  }
+
+
   
 function openProject() {
     var src = "https://ayanhabib67.github.io/Add-to-Card/";
