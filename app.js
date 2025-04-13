@@ -34,7 +34,14 @@ const projects = {
         description: "A simple app to create, view, and manage posts.",
         link: "https://ayanhabib67.github.io/post-App/",
         image: "https://via.placeholder.com/286x180?text=Post+App"
+      },
+      StopWatch: {
+        title: "Stop-Watch",
+        description: "A simple and responsive stopwatch web app built with HTML, CSS, and JavaScript. It features start, stop, and reset functionality, making it perfect for timing events or workouts with precision.",
+        link: "https://ayanhabib67.github.io/Stop-Watch/",
+        image: ""
       }
+      
   };
   
   
@@ -55,6 +62,47 @@ caards.innerHTML += Object.values(projects).map(item => `
     </div>
   `).join('');
   
+  const projectsHtml = {
+    preciousburge: {
+      title: "Precious Burger",
+      description: "An enticing online menu for a gourmet burger restaurant, featuring a variety of beef and chicken burgers, combo meals, and gourmet fries. The interface showcases detailed descriptions and pricing for each item, providing users with an appetizing browsing experience.",
+      link: "https://ayanhabib67.github.io/precious-burger/",
+      image: ""
+    },
+    pepsi: {
+      title: "Pepsi",
+      description: "A sleek promotional landing page for Pepsi, highlighting the latest product drops with engaging visuals and a modern layout. The design emphasizes brand aesthetics and user engagement.",
+      link: "https://ayanhabib67.github.io/pepsi/",
+      image: ""
+    },
+    saltnpaper: {
+      title: "Salt n Paper",
+      description: "An informative website for Salt'n Pepper Restaurants, offering details about various franchise locations, contact information, and online ordering options. The site serves as a comprehensive portal for customers seeking information about the brand's offerings.",
+      link: "https://ayanhabib67.github.io/salt-n-paper/",
+      image: ""
+    }
+  };
+  
+  
+  
+
+    let caards1 = document.getElementById("cards1");
+  
+
+    caards1.innerHTML += Object.values(projectsHtml).map(item => `
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            
+            <div class="card-body d-flex flex-column">
+              <h1 class="card-title">${item.title}</h1>
+              <p class="card-text">Description : ${item.description}</p>
+             <button class="btn custom-btn" onclick="window.open('${item.link}', '_blank')">Open Project</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+
 
 
 
