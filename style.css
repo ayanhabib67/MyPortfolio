@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,4 +74,62 @@ color: white;
   background-color:#333 ;
   border-radius: 0cqmax;
 }
+.swal-modal {
+  background-color: #121212 !important;
+  color: #fff !important;
+  border-radius: 20px !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.swal-title {
+  color: #ffffff !important;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.swal-text {
+  color: #cccccc !important;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.swal-button.custom-btn {
+  background-color: #00b894;
+  color: white;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.swal-button.custom-btn:hover {
+  background-color: #019875;
+}
+ 
+/* Custom Button Style */
+.custom-btn {
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+  color: white;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 50px; /* Rounded corners */
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow effect */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.custom-btn:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb); /* Reversed gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+
 
