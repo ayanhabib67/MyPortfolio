@@ -1,4 +1,10 @@
 const projects = {
+  boycottedProductChecker: {
+    title: "Boycotted Product Checker",
+    description: "A tool to check if a product is on the Israel boycott list and support ethical choices by avoiding Israeli products.",
+    link: "https://ayanhabib67.github.io/Boycotted-Product-Checker/", 
+    image: ""  
+  },
     addToCard: {
       title: "Add-to-Card",
       description: "An interactive shopping cart interface using localStorage.",
@@ -118,11 +124,4 @@ window.onload = function() {
     closeOnClickOutside: false
   });
 };
-
-
-  
-function openProject() {
-    var src = "https://ayanhabib67.github.io/Add-to-Card/";
-    window.open(src, "_blank");
-  }
 
