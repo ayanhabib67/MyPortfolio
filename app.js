@@ -5,6 +5,12 @@ const projects = {
     link: "https://ayanhabib67.github.io/Boycotted-Product-Checker/", 
     image: ""  
   },
+  weatherAPIFetch: {
+  title: "Weather API Fetch",
+  description: "A simple tool to fetch and display real-time weather information using an external API based on user input.",
+  link: "https://ayanhabib67.github.io/Weather-Forecast/", 
+  image: ""  
+  },
     addToCard: {
       title: "Add-to-Card",
       description: "An interactive shopping cart interface using localStorage.",
