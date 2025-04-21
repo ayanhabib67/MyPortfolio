@@ -5,6 +5,20 @@ const projects = {
     link: "https://ayanhabib67.github.io/Boycotted-Product-Checker/", 
     image: ""  
   },
+  bookmarkManager: {
+  title: "Bookmark Manager",
+  description: "A simple tool to manage your bookmarks with the help of localStorage. Users can add, remove, and organize their favorite links.",
+  link: "https://ayanhabib67.github.io/Bookmark-Manager/",
+  image: ""
+},
+  addCurrencyConverter: {
+  title: "Currency Converter",
+  description: "A tool to convert between various currencies using real-time exchange rates fetched from an API.",
+  link: "https://ayanhabib67.github.io/Currency-Converter/",
+  image: ""
+},
+
+
   weatherAPIFetch: {
   title: "Weather API Fetch",
   description: "A simple tool to fetch and display real-time weather information using an external API based on user input.",
