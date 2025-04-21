@@ -14,7 +14,7 @@ const projects = {
   addCurrencyConverter: {
   title: "Currency Converter",
   description: "A tool to convert between various currencies using real-time exchange rates fetched from an API.",
-  link: "https://ayanhabib67.github.io/Currency-Converter/",
+  link: "https://ayanhabib67.github.io/Currency-Conversion/",
   image: ""
 },
 
