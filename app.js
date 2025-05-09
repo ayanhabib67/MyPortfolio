@@ -1,91 +1,88 @@
-const projects = {
-  boycottedProductChecker: {
-    title: "Boycotted Product Checker",
-    description: "A tool to check if a product is on the Israel boycott list and support ethical choices by avoiding Israeli products.",
-    link: "https://ayanhabib67.github.io/Boycotted-Product-Checker/", 
-    image: ""  
-  },
-  bookmarkManager: {
-  title: "Bookmark Manager",
-  description: "A simple tool to manage your bookmarks with the help of localStorage. Users can add, remove, and organize their favorite links.",
-  link: "https://ayanhabib67.github.io/Bookmark-Manager/",
-  image: ""
-},
-  addCurrencyConverter: {
-  title: "Currency Converter",
-  description: "A tool to convert between various currencies using real-time exchange rates fetched from an API.",
-  link: "https://ayanhabib67.github.io/Currency-Conversion/",
-  image: ""
-},
-
-
-  weatherAPIFetch: {
-  title: "Weather API Fetch",
-  description: "A simple tool to fetch and display real-time weather information using an external API based on user input.",
-  link: "https://ayanhabib67.github.io/Weather-Forecast/", 
-  image: ""  
-  },
+// const projects = {
+//   boycottedProductChecker: {
+  const projects = {
+    boycottedProductChecker: {
+      title: "Boycotted Product Checker",
+      description: "Identify products linked to Israeli companies and make ethical shopping decisions with this intuitive boycott checker.",
+      link: "https://ayanhabib67.github.io/Boycotted-Product-Checker/",
+    },
     addToCard: {
       title: "Add-to-Card",
-      description: "An interactive shopping cart interface using localStorage.",
+      description: "A sleek, interactive shopping cart system that leverages localStorage to retain and manage your selected items with ease.",
       link: "https://ayanhabib67.github.io/Add-to-Card/",
-      image: ""
     },
     searchingApp: {
       title: "Searching App",
-      description: "A real-time search interface using JavaScript filtering.",
+      description: "An instant, responsive search tool that dynamically filters content as you type — ideal for product lists and catalogs.",
       link: "https://ayanhabib67.github.io/Searching-Car-App/",
-      image: "c:\Users\ADMINI~1\AppData\Local\Temp\Rar$DRa8156.14233\Add to Card_page-0002.jpg"
     },
     toDoAppUpdated: {
-      title: "To-Do-App-updated",
-      description: "A task manager app with edit, delete, and save functionality.",
+      title: "To-Do App (Updated)",
+      description: "A powerful task management tool with full CRUD operations, designed for productivity and persistent storage.",
       link: "https://ayanhabib67.github.io/To-Do-App-updated/",
-      image: "https://via.placeholder.com/286x180?text=To-Do-App"
     },
     githubProfileFetcher: {
       title: "GitHub Profile Fetcher",
-      description: "Fetch and display GitHub user info via GitHub API.",
+      description: "Search and display GitHub user profiles in real-time using GitHub’s API — perfect for developers and recruiters.",
       link: "https://ayanhabib67.github.io/GitHub-Profile-Fetcher/",
-      image: "https://via.placeholder.com/286x180?text=GitHub+Fetcher"
     },
     passwordGenerator: {
       title: "Password Generator",
-      description: "A secure password generator with customizable options.",
+      description: "Generate secure, customizable passwords with advanced options for enhanced online safety and privacy.",
       link: "https://ayanhabib67.github.io/password-generator/",
-      image: "https://via.placeholder.com/286x180?text=Password+Generator"
     },
     postApp: {
-        title: "Post App",
-        description: "A simple app to create, view, and manage posts.",
-        link: "https://ayanhabib67.github.io/post-App/",
-        image: "https://via.placeholder.com/286x180?text=Post+App"
-      },
-      StopWatch: {
-        title: "Stop-Watch",
-        description: "A simple and responsive stopwatch web app built with HTML, CSS, and JavaScript. It features start, stop, and reset functionality, making it perfect for timing events or workouts with precision.",
-        link: "https://ayanhabib67.github.io/Stop-Watch/",
-        image: ""
-      }
-      
+      title: "Post App",
+      description: "Create, edit, and manage content effortlessly in this lightweight CRUD app — perfect for blogging or notes.",
+      link: "https://ayanhabib67.github.io/post-App/",
+    },
+    StopWatch: {
+      title: "Stopwatch",
+      description: "A precise and responsive stopwatch app with start, stop, and reset features — ideal for workouts or productivity tracking.",
+      link: "https://ayanhabib67.github.io/Stop-Watch/",
+    },
+    studentAttendancePortal: {
+      title: "Student Attendance Portal",
+      description: "Track student attendance in real-time with a user-friendly portal that saves records using localStorage.",
+      link: "https://ayanhabib67.github.io/Student-Attendance-Portal/",
+    },
+    expenseTracker: {
+      title: "Expense Tracker",
+      description: "Monitor income and expenses with ease using this real-time financial tracker with persistent local data storage.",
+      link: "https://ayanhabib67.github.io/Expense-Tracker/",
+    }
   };
   
+    
+      
+
   
+  
+
   
   let caards = document.getElementById("cards");
   
 
-caards.innerHTML += Object.values(projects).map(item => `
-    <div class="col-md-4 mb-4">
-      <div class="card h-100">
-        
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title">${item.title}</h1>
-          <p class="card-text">Description : ${item.description}</p>
-         <button class="btn custom-btn" onclick="window.open('${item.link}', '_blank')">Open Project</button>
-        </div>
+caards.innerHTML += Object.values(projects).map(({ title, description, link }) =>  
+
+  `
+   <div class="col-md-4 mb-4">
+  <div class="card h-100 bg-dark border-0 shadow-lg rounded-4" style="background: #1e1e1e;">
+    <div class="card-body d-flex flex-column justify-content-between p-4">
+      <div>
+        <h3 class="card-title fw-bold text-neon mb-3">${title}</h3>
+        <p class="card-text text-light">
+          <strong>Description:</strong> ${description}
+        </p>
       </div>
+      <button class="custom-btn" onclick="window.open('${link}', '_blank')">
+        🚀 Open Project
+      </button>
     </div>
+  </div>
+</div>
+
+
   `).join('');
   
   const projectsHtml = {
@@ -116,23 +113,28 @@ caards.innerHTML += Object.values(projects).map(item => `
   
 
     caards1.innerHTML += Object.values(projectsHtml).map(item => `
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            
-            <div class="card-body d-flex flex-column">
-              <h1 class="card-title">${item.title}</h1>
-              <p class="card-text">Description : ${item.description}</p>
-             <button class="btn custom-btn" onclick="window.open('${item.link}', '_blank')">Open Project</button>
-            </div>
-          </div>
-        </div>
+         <div class="col-md-4 mb-4">
+  <div class="card h-100 bg-dark border-0 shadow-lg rounded-4" style="background: #1e1e1e;">
+    <div class="card-body d-flex flex-column justify-content-between p-4">
+      <div>
+        <h3 class="card-title fw-bold text-neon mb-3">${item.title}</h3>
+        <p class="card-text text-light">
+          <strong>Description:</strong> ${item.description}
+        </p>
+      </div>
+      <button class="custom-btn" onclick="window.open('${item.link}', '_blank')">
+        🚀 Open Project
+      </button>
+    </div>
+  </div>
+</div>
       `).join('');
 
 
 
 
 
-window.onload = function() {
+window.onload =()=> {
   swal({
     title: "Welcome to My Portfolio 👋",
     text: "I'm Ayan Habib — a passionate Front-End Developer. Explore and enjoy the journey!",
@@ -144,4 +146,3 @@ window.onload = function() {
     closeOnClickOutside: false
   });
 };
-
