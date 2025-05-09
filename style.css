@@ -200,30 +200,106 @@ footer a:hover {
   transform: scale(1.08);
   box-shadow: 0 8px 25px rgba(0, 255, 213, 0.35);
 }
+
+/* Text Center with Poppins Font */
 .text-center.mb-4 {
-  font-family: 'Poppins', sans-serif; /* Poppins font */
-  font-size: 4rem; /* Increased font size */
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
   font-weight: 700;
-  color: #00ffc3; /* Neon aqua */
-  text-shadow: 0 2px 15px rgba(0, 255, 213, 0.3); /* Adjusted text shadow */
+  color: #00ffc3;
+  text-shadow: 0 2px 15px rgba(0, 255, 213, 0.3);
 }
 
-
+/* Card Title with Neon Effect */
 .card-title.fw-bold.text-neon.mb-3 {
-  font-family: 'Poppins', sans-serif; /* Poppins font */
-  font-size: 2.5rem; /* Adjusted font size */
-  font-weight: 700; /* Bold font weight */
-  color: #00ffc3; /* Neon aqua color */
-  text-shadow: 0 2px 10px rgba(0, 255, 213, 0.3); /* Neon glow effect */
-  margin-bottom: 1.5rem; /* Adjusted margin bottom */
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00ffc3;
+  text-shadow: 0 2px 10px rgba(0, 255, 213, 0.3);
+  margin-bottom: 1.5rem;
 }
+
+/* Card Text with Roboto Font */
 .card-text.text-light {
-  font-family: 'Roboto', sans-serif; /* Changed to Roboto font */
-  font-size: 1.2rem; /* Adjusted font size */
-  color: #dddddd; /* Light grey color */
-  line-height: 1.8; /* Adjusted line height for better readability */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #dddddd;
+  line-height: 1.8;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
 
+  header nav {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  header nav div:first-child {
+    font-size: 1.4rem;
+  }
 
+  .text-center.mb-4 {
+    font-size: 3rem; /* Adjusted font size */
+  }
+
+  .card-title.fw-bold.text-neon.mb-3 {
+    font-size: 2rem; /* Adjusted font size */
+  }
+
+  .card-text.text-light {
+    font-size: 1rem; /* Adjusted font size */
+  }
+
+  #hero h1 {
+    font-size: 2.5rem; /* Adjusted for smaller screens */
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .custom-btn {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  header nav div:first-child {
+    font-size: 1.2rem;
+  }
+
+  .text-center.mb-4 {
+    font-size: 2.5rem; /* Adjusted font size */
+  }
+
+  .card-title.fw-bold.text-neon.mb-3 {
+    font-size: 1.8rem; /* Adjusted font size */
+  }
+
+  .card-text.text-light {
+    font-size: 0.9rem; /* Adjusted font size */
+  }
+
+  #hero h1 {
+    font-size: 2rem; /* Adjusted for very small screens */
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+
+  .custom-btn {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+}
